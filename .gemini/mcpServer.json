@@ -1,0 +1,121 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "pnpm",
+      "args": ["dlx", "@modelcontextprotocol/server-context7"],
+      "env": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      },
+      "trust": false
+    },
+    "filesystem": {
+      "command": "node",
+      "args": ["./scripts/filesystem-mcp-server.js"],
+      "cwd": "./",
+      "trust": false
+    },
+    "shadcn": {
+      "command": "pnpm",
+      "args": ["dlx", "shadcn@latest", "add"],
+      "cwd": "./",
+      "trust": false
+    },
+    "neon": {
+      "command": "node",
+      "args": ["./scripts/neon-mcp-server.js"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      },
+      "cwd": "./",
+      "trust": false
+    },
+    "auth": {
+      "command": "pnpm",
+      "args": ["dlx", "@modelcontextprotocol/server-nextauth"],
+      "env": {
+        "NEXTAUTH_SECRET": "${NEXTAUTH_SECRET}",
+        "GITHUB_ID": "${GITHUB_ID}",
+        "GITHUB_SECRET": "${GITHUB_SECRET}"
+      },
+      "trust": false
+    },
+    "drizzle": {
+      "command": "pnpm",
+      "args": ["dlx", "drizzle-kit", "generate", "--migrate"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      },
+      "trust": false
+    },
+    "playwright": {
+      "command": "pnpm",
+      "args": ["dlx", "playwright", "test"],
+      "env": {
+        "PLAYWRIGHT_E2E_USER": "${PLAYWRIGHT_E2E_USER}",
+        "PLAYWRIGHT_E2E_PASS": "${PLAYWRIGHT_E2E_PASS}"
+      },
+      "cwd": "./",
+      "trust": false
+    },
+    "github": {
+      "command": "pnpm",
+      "args": ["dlx", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      },
+      "trust": false
+    },
+    "github_ci": {
+      "command": "pnpm",
+      "args": ["dlx", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_CI_CD_TOKEN}"
+      },
+      "trust": false
+    },
+    "vercel": {
+      "command": "pnpm",
+      "args": ["dlx", "@vercel/mcp-server"],
+      "env": {
+        "VERCEL_TOKEN": "${VERCEL_TOKEN}"
+      },
+      "trust": false
+    },
+    "vercel_ci": {
+      "command": "pnpm",
+      "args": ["dlx", "@vercel/mcp-server"],
+      "env": {
+        "VERCEL_TOKEN": "${VERCEL_CI_CD_TOKEN}"
+      },
+      "trust": false
+    },
+    "sentry": {
+      "command": "pnpm",
+      "args": ["dlx", "@sentry/nextjs", "upload-sourcemaps"],
+      "env": {
+        "SENTRY_AUTH_TOKEN": "${SENTRY_AUTH_TOKEN}"
+      },
+      "trust": false
+    },
+    "openapi": {
+      "command": "pnpm",
+      "args": ["dlx", "openapi-typescript-codegen", "--input", "${input_spec}", "--output", "${output_dir}"],
+      "cwd": "./",
+      "trust": false
+    },
+    "i18n": {
+      "command": "pnpm",
+      "args": ["dlx", "next-intl"],
+      "cwd": "./",
+      "trust": false
+    },
+    "gemini": {
+      "command": "pnpm",
+      "args": ["dlx", "@modelcontextprotocol/server-gemini"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      },
+      "trust": false
+    }
+  }
+}

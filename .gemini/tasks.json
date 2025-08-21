@@ -1,0 +1,139 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "프로젝트 초기 설정",
+      "description": "pnpm으로 의존성 설치 및 환경 설정 완료",
+      "dependencies": [],
+      "mcpCommands": ["@filesystem .gitignore 생성", "@filesystem .env.local 설정"],
+      "status": "pending",
+      "deadline": "2025-08-22T12:00:00+09:00",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "디자인 원칙 적용",
+      "description": "`.gemini/design.json` 기반 UI 설계 및 shadcn 컴포넌트 추가",
+      "dependencies": [1],
+      "mcpCommands": ["@shadcn Card 컴포넌트 추가", "@shadcn 다크/라이트 토글 배치"],
+      "status": "pending",
+      "deadline": "2025-08-22T14:00:00+09:00",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "title": "인증 시스템 설정",
+      "description": "NextAuth를 사용한 GitHub/Google 로그인 구현",
+      "dependencies": [1],
+      "mcpCommands": ["@auth GitHub 로그인 설정", "@auth JWT 세션 확인"],
+      "status": "pending",
+      "deadline": "2025-08-22T16:00:00+09:00",
+      "priority": "medium"
+    },
+    {
+      "id": 4,
+      "title": "데이터베이스 및 마이그레이션 설정",
+      "description": "Neon 데이터베이스 연결 및 Drizzle 마이그레이션 실행",
+      "dependencies": [1],
+      "mcpCommands": ["@drizzle schema 업데이트", "@drizzle migration:generate", "@neon migration 실행"],
+      "status": "pending",
+      "deadline": "2025-08-22T18:00:00+09:00",
+      "priority": "high"
+    },
+    {
+      "id": 5,
+      "title": "테스트 환경 구축",
+      "description": "Playwright E2E 및 Vitest 단위 테스트 설정",
+      "dependencies": [2, 4],
+      "mcpCommands": ["@e2e 대시보드 테스트", "@vitest 단위 테스트 실행"],
+      "status": "pending",
+      "deadline": "2025-08-23T10:00:00+09:00",
+      "priority": "medium"
+    },
+    {
+      "id": 6,
+      "title": "모니터링 및 로깅 설정",
+      "description": "Sentry로 에러 추적 및 로그 모니터링 활성화",
+      "dependencies": [5],
+      "mcpCommands": ["@sentry 에러 모니터링 설정"],
+      "status": "pending",
+      "deadline": "2025-08-23T12:00:00+09:00",
+      "priority": "medium"
+    },
+    {
+      "id": 7,
+      "title": "외부 API 연동",
+      "description": "OpenAPI를 사용한 Stripe/Slack 연동",
+      "dependencies": [4],
+      "mcpCommands": ["@openapi Stripe API 통합"],
+      "status": "pending",
+      "deadline": "2025-08-23T14:00:00+09:00",
+      "priority": "low"
+    },
+    {
+      "id": 8,
+      "title": "다국어 지원 구현",
+      "description": "next-intl로 다국어 번역 설정",
+      "dependencies": [2],
+      "mcpCommands": ["@i18n ko 번역 추가"],
+      "status": "pending",
+      "deadline": "2025-08-23T16:00:00+09:00",
+      "priority": "low"
+    },
+    {
+      "id": 9,
+      "title": "UI 컴포넌트 프리뷰",
+      "description": "Storybook으로 shadcn 컴포넌트 미리보기",
+      "dependencies": [2],
+      "mcpCommands": ["@storybook Card 컴포넌트 미리보기"],
+      "status": "pending",
+      "deadline": "2025-08-23T18:00:00+09:00",
+      "priority": "low"
+    },
+    {
+      "id": 10,
+      "title": "모노레포 구조 설정",
+      "description": "pnpm workspaces를 사용하여 프로젝트를 apps/web, packages/ui로 분리",
+      "dependencies": [1],
+      "mcpCommands": ["@filesystem pnpm-workspace.yaml 생성", "pnpm install"],
+      "status": "pending",
+      "deadline": "2025-08-24T10:00:00+09:00",
+      "priority": "high"
+    },
+    {
+      "id": 11,
+      "title": "엔드투엔드 테스트 구축",
+      "description": "Playwright로 핵심 사용자 흐름 E2E 테스트 작성 및 CI/CD 연동",
+      "dependencies": [3, 4],
+      "mcpCommands": ["@e2e 로그인 테스트 작성", "pnpm run e2e:ci"],
+      "status": "pending",
+      "deadline": "2025-08-24T14:00:00+09:00",
+      "priority": "high"
+    },
+    {
+      "id": 12,
+      "title": "고급 CI/CD 파이프라인 구축",
+      "description": "GitHub Actions를 활용한 자동 테스트 및 배포 워크플로우 설정",
+      "dependencies": [10, 11],
+      "mcpCommands": ["@github CI 설정", "@vercel 프로덕션 배포"],
+      "status": "pending",
+      "deadline": "2025-08-24T16:00:00+09:00",
+      "priority": "high"
+    },
+    {
+      "id": 13,
+      "title": "배포 및 PR 생성",
+      "description": "Vercel로 Preview 배포 후 GitHub PR 생성",
+      "dependencies": [5, 6, 7, 8, 9],
+      "mcpCommands": ["@vercel Preview 배포", "@github PR 생성"],
+      "status": "pending",
+      "deadline": "2025-08-25T10:00:00+09:00",
+      "priority": "high"
+    }
+  ],
+  "metadata": {
+    "startDate": "2025-08-22T10:20:00+09:00",
+    "projectName": "SaaS Admin Dashboard",
+    "version": "1.0.0"
+  }
+}
