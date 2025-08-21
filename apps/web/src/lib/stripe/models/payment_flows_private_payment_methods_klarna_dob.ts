@@ -1,0 +1,19 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export type payment_flows_private_payment_methods_klarna_dob = {
+    /**
+     * The day of birth, between 1 and 31.
+     */
+    day?: number | null;
+    /**
+     * The month of birth, between 1 and 12.
+     */
+    month?: number | null;
+    /**
+     * The four-digit year of birth.
+     */
+    year?: number | null;
+};
+

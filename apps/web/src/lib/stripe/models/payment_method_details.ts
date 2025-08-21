@@ -1,0 +1,121 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+import type { payment_flows_private_payment_methods_alipay_details } from './payment_flows_private_payment_methods_alipay_details';
+import type { payment_method_details_ach_credit_transfer } from './payment_method_details_ach_credit_transfer';
+import type { payment_method_details_ach_debit } from './payment_method_details_ach_debit';
+import type { payment_method_details_acss_debit } from './payment_method_details_acss_debit';
+import type { payment_method_details_affirm } from './payment_method_details_affirm';
+import type { payment_method_details_afterpay_clearpay } from './payment_method_details_afterpay_clearpay';
+import type { payment_method_details_alma } from './payment_method_details_alma';
+import type { payment_method_details_amazon_pay } from './payment_method_details_amazon_pay';
+import type { payment_method_details_au_becs_debit } from './payment_method_details_au_becs_debit';
+import type { payment_method_details_bacs_debit } from './payment_method_details_bacs_debit';
+import type { payment_method_details_bancontact } from './payment_method_details_bancontact';
+import type { payment_method_details_billie } from './payment_method_details_billie';
+import type { payment_method_details_blik } from './payment_method_details_blik';
+import type { payment_method_details_boleto } from './payment_method_details_boleto';
+import type { payment_method_details_card } from './payment_method_details_card';
+import type { payment_method_details_card_present } from './payment_method_details_card_present';
+import type { payment_method_details_cashapp } from './payment_method_details_cashapp';
+import type { payment_method_details_crypto } from './payment_method_details_crypto';
+import type { payment_method_details_customer_balance } from './payment_method_details_customer_balance';
+import type { payment_method_details_eps } from './payment_method_details_eps';
+import type { payment_method_details_fpx } from './payment_method_details_fpx';
+import type { payment_method_details_giropay } from './payment_method_details_giropay';
+import type { payment_method_details_grabpay } from './payment_method_details_grabpay';
+import type { payment_method_details_ideal } from './payment_method_details_ideal';
+import type { payment_method_details_interac_present } from './payment_method_details_interac_present';
+import type { payment_method_details_kakao_pay } from './payment_method_details_kakao_pay';
+import type { payment_method_details_klarna } from './payment_method_details_klarna';
+import type { payment_method_details_konbini } from './payment_method_details_konbini';
+import type { payment_method_details_kr_card } from './payment_method_details_kr_card';
+import type { payment_method_details_link } from './payment_method_details_link';
+import type { payment_method_details_mobilepay } from './payment_method_details_mobilepay';
+import type { payment_method_details_multibanco } from './payment_method_details_multibanco';
+import type { payment_method_details_naver_pay } from './payment_method_details_naver_pay';
+import type { payment_method_details_nz_bank_account } from './payment_method_details_nz_bank_account';
+import type { payment_method_details_oxxo } from './payment_method_details_oxxo';
+import type { payment_method_details_p24 } from './payment_method_details_p24';
+import type { payment_method_details_pay_by_bank } from './payment_method_details_pay_by_bank';
+import type { payment_method_details_payco } from './payment_method_details_payco';
+import type { payment_method_details_paynow } from './payment_method_details_paynow';
+import type { payment_method_details_paypal } from './payment_method_details_paypal';
+import type { payment_method_details_pix } from './payment_method_details_pix';
+import type { payment_method_details_promptpay } from './payment_method_details_promptpay';
+import type { payment_method_details_revolut_pay } from './payment_method_details_revolut_pay';
+import type { payment_method_details_samsung_pay } from './payment_method_details_samsung_pay';
+import type { payment_method_details_satispay } from './payment_method_details_satispay';
+import type { payment_method_details_sepa_debit } from './payment_method_details_sepa_debit';
+import type { payment_method_details_sofort } from './payment_method_details_sofort';
+import type { payment_method_details_stripe_account } from './payment_method_details_stripe_account';
+import type { payment_method_details_swish } from './payment_method_details_swish';
+import type { payment_method_details_twint } from './payment_method_details_twint';
+import type { payment_method_details_us_bank_account } from './payment_method_details_us_bank_account';
+import type { payment_method_details_wechat } from './payment_method_details_wechat';
+import type { payment_method_details_wechat_pay } from './payment_method_details_wechat_pay';
+import type { payment_method_details_zip } from './payment_method_details_zip';
+export type payment_method_details = {
+    ach_credit_transfer?: payment_method_details_ach_credit_transfer;
+    ach_debit?: payment_method_details_ach_debit;
+    acss_debit?: payment_method_details_acss_debit;
+    affirm?: payment_method_details_affirm;
+    afterpay_clearpay?: payment_method_details_afterpay_clearpay;
+    alipay?: payment_flows_private_payment_methods_alipay_details;
+    alma?: payment_method_details_alma;
+    amazon_pay?: payment_method_details_amazon_pay;
+    au_becs_debit?: payment_method_details_au_becs_debit;
+    bacs_debit?: payment_method_details_bacs_debit;
+    bancontact?: payment_method_details_bancontact;
+    billie?: payment_method_details_billie;
+    blik?: payment_method_details_blik;
+    boleto?: payment_method_details_boleto;
+    card?: payment_method_details_card;
+    card_present?: payment_method_details_card_present;
+    cashapp?: payment_method_details_cashapp;
+    crypto?: payment_method_details_crypto;
+    customer_balance?: payment_method_details_customer_balance;
+    eps?: payment_method_details_eps;
+    fpx?: payment_method_details_fpx;
+    giropay?: payment_method_details_giropay;
+    grabpay?: payment_method_details_grabpay;
+    ideal?: payment_method_details_ideal;
+    interac_present?: payment_method_details_interac_present;
+    kakao_pay?: payment_method_details_kakao_pay;
+    klarna?: payment_method_details_klarna;
+    konbini?: payment_method_details_konbini;
+    kr_card?: payment_method_details_kr_card;
+    link?: payment_method_details_link;
+    mobilepay?: payment_method_details_mobilepay;
+    multibanco?: payment_method_details_multibanco;
+    naver_pay?: payment_method_details_naver_pay;
+    nz_bank_account?: payment_method_details_nz_bank_account;
+    oxxo?: payment_method_details_oxxo;
+    p24?: payment_method_details_p24;
+    pay_by_bank?: payment_method_details_pay_by_bank;
+    payco?: payment_method_details_payco;
+    paynow?: payment_method_details_paynow;
+    paypal?: payment_method_details_paypal;
+    pix?: payment_method_details_pix;
+    promptpay?: payment_method_details_promptpay;
+    revolut_pay?: payment_method_details_revolut_pay;
+    samsung_pay?: payment_method_details_samsung_pay;
+    satispay?: payment_method_details_satispay;
+    sepa_debit?: payment_method_details_sepa_debit;
+    sofort?: payment_method_details_sofort;
+    stripe_account?: payment_method_details_stripe_account;
+    swish?: payment_method_details_swish;
+    twint?: payment_method_details_twint;
+    /**
+     * The type of transaction-specific details of the payment method used in the payment. See [PaymentMethod.type](https://stripe.com/docs/api/payment_methods/object#payment_method_object-type) for the full list of possible types.
+     * An additional hash is included on `payment_method_details` with a name matching this value.
+     * It contains information specific to the payment method.
+     */
+    type: string;
+    us_bank_account?: payment_method_details_us_bank_account;
+    wechat?: payment_method_details_wechat;
+    wechat_pay?: payment_method_details_wechat_pay;
+    zip?: payment_method_details_zip;
+};
+
