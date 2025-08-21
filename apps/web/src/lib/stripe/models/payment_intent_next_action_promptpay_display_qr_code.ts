@@ -1,0 +1,23 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export type payment_intent_next_action_promptpay_display_qr_code = {
+    /**
+     * The raw data string used to generate QR code, it should be used together with QR code library.
+     */
+    data: string;
+    /**
+     * The URL to the hosted PromptPay instructions page, which allows customers to view the PromptPay QR code.
+     */
+    hosted_instructions_url: string;
+    /**
+     * The PNG path used to render the QR code, can be used as the source in an HTML img tag
+     */
+    image_url_png: string;
+    /**
+     * The SVG path used to render the QR code, can be used as the source in an HTML img tag
+     */
+    image_url_svg: string;
+};
+

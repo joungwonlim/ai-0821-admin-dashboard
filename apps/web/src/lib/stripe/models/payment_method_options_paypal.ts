@@ -1,0 +1,50 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export type payment_method_options_paypal = {
+    /**
+     * Controls when the funds will be captured from the customer's account.
+     */
+    capture_method?: payment_method_options_paypal.capture_method;
+    /**
+     * Preferred locale of the PayPal checkout page that the customer is redirected to.
+     */
+    preferred_locale?: string | null;
+    /**
+     * A reference of the PayPal transaction visible to customer which is mapped to PayPal's invoice ID. This must be a globally unique ID if you have configured in your PayPal settings to block multiple payments per invoice ID.
+     */
+    reference?: string | null;
+    /**
+     * Indicates that you intend to make future payments with this PaymentIntent's payment method.
+     *
+     * If you provide a Customer with the PaymentIntent, you can use this parameter to [attach the payment method](/payments/save-during-payment) to the Customer after the PaymentIntent is confirmed and the customer completes any required actions. If you don't provide a Customer, you can still [attach](/api/payment_methods/attach) the payment method to a Customer after the transaction completes.
+     *
+     * If the payment method is `card_present` and isn't a digital wallet, Stripe creates and attaches a [generated_card](/api/charges/object#charge_object-payment_method_details-card_present-generated_card) payment method representing the card to the Customer instead.
+     *
+     * When processing card payments, Stripe uses `setup_future_usage` to help you comply with regional legislation and network rules, such as [SCA](/strong-customer-authentication).
+     */
+    setup_future_usage?: payment_method_options_paypal.setup_future_usage;
+};
+export namespace payment_method_options_paypal {
+    /**
+     * Controls when the funds will be captured from the customer's account.
+     */
+    export enum capture_method {
+        MANUAL = 'manual',
+    }
+    /**
+     * Indicates that you intend to make future payments with this PaymentIntent's payment method.
+     *
+     * If you provide a Customer with the PaymentIntent, you can use this parameter to [attach the payment method](/payments/save-during-payment) to the Customer after the PaymentIntent is confirmed and the customer completes any required actions. If you don't provide a Customer, you can still [attach](/api/payment_methods/attach) the payment method to a Customer after the transaction completes.
+     *
+     * If the payment method is `card_present` and isn't a digital wallet, Stripe creates and attaches a [generated_card](/api/charges/object#charge_object-payment_method_details-card_present-generated_card) payment method representing the card to the Customer instead.
+     *
+     * When processing card payments, Stripe uses `setup_future_usage` to help you comply with regional legislation and network rules, such as [SCA](/strong-customer-authentication).
+     */
+    export enum setup_future_usage {
+        NONE = 'none',
+        OFF_SESSION = 'off_session',
+    }
+}
+

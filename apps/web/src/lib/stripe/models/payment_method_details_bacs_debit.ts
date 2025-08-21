@@ -1,0 +1,23 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export type payment_method_details_bacs_debit = {
+    /**
+     * Uniquely identifies this particular bank account. You can use this attribute to check whether two bank accounts are the same.
+     */
+    fingerprint?: string | null;
+    /**
+     * Last four digits of the bank account number.
+     */
+    last4?: string | null;
+    /**
+     * ID of the mandate used to make this payment.
+     */
+    mandate?: string | null;
+    /**
+     * Sort code of the bank account. (e.g., `10-20-30`)
+     */
+    sort_code?: string | null;
+};
+
