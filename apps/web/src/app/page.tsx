@@ -47,10 +47,19 @@ export default function Home() {
           )}
           {stripeData && (
             <div className="mt-4 p-4 border rounded-md w-full max-w-md text-left">
-              <h2 className="text-xl font-semibold mb-2">Stripe Data:</h2>
-              <pre className="text-sm overflow-auto max-h-60">
-                {JSON.stringify(stripeData, null, 2)}
-              </pre>
+              <h2 className="text-xl font-semibold mb-2">Stripe Products:</h2>
+              {stripeData.data && stripeData.data.length > 0 ? (
+                <ul>
+                  {stripeData.data.map((product: any) => (
+                    <li key={product.id} className="mb-2">
+                      <h3 className="font-medium">{product.name}</h3>
+                      <p className="text-sm text-muted-foreground">{product.description || "No description"}</p>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p>No products found or data is empty.</p>
+              )}
             </div>
           )}
         </div>
