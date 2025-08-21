@@ -1,0 +1,28 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+import type { connect_account_reference } from './connect_account_reference';
+export type schedules_phase_automatic_tax = {
+    /**
+     * If Stripe disabled automatic tax, this enum describes why.
+     */
+    disabled_reason?: schedules_phase_automatic_tax.disabled_reason | null;
+    /**
+     * Whether Stripe automatically computes tax on invoices created during this phase.
+     */
+    enabled: boolean;
+    /**
+     * The account that's liable for tax. If set, the business address and tax registrations required to perform the tax calculation are loaded from this account. The tax transaction is returned in the report of the connected account.
+     */
+    liability?: connect_account_reference | null;
+};
+export namespace schedules_phase_automatic_tax {
+    /**
+     * If Stripe disabled automatic tax, this enum describes why.
+     */
+    export enum disabled_reason {
+        REQUIRES_LOCATION_INPUTS = 'requires_location_inputs',
+    }
+}
+
