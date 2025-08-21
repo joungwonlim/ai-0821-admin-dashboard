@@ -1,0 +1,15 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export type payment_pages_checkout_session_custom_fields_option = {
+    /**
+     * The label for the option, displayed to the customer. Up to 100 characters.
+     */
+    label: string;
+    /**
+     * The value for this option, not displayed to the customer, used by your integration to reconcile the option selected by the customer. Must be unique to this option, alphanumeric, and up to 100 characters.
+     */
+    value: string;
+};
+
