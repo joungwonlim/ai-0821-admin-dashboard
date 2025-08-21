@@ -20,17 +20,11 @@ export default withSentryConfig(
     // For all available options, see:
     // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
 
-    // Upload a larger set of source maps for prettier stack traces (increases build time)
-    widenClientFileUpload: true,
-
-    // Transpiles SDK to be compatible with older browsers (increases build time)
-    transpileClientSDK: true,
-
-    // Routes browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers (increases server load)
-    tunnelRoute: "/monitoring-tunnel",
-
-    // Hides source maps from browser devtools
-    hideSourceMaps: true,
+    // These options are now handled by instrumentation.ts
+    // widenClientFileUpload: true,
+    // transpileClientSDK: true,
+    // tunnelRoute: "/monitoring-tunnel",
+    // hideSourceMaps: true,
 
     // Start Sentry when running locally
     // autoInstrumentServerFunctions: true,
