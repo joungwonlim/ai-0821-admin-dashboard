@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import AuthProvider from "@/components/auth-provider";
+import { UserNav } from "@/components/user-nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <AuthProvider>
-            <div className="fixed top-4 right-4">
+            <div className="fixed top-4 right-4 flex items-center space-x-4">
+              <UserNav />
               <ModeToggle />
             </div>
             {children}
