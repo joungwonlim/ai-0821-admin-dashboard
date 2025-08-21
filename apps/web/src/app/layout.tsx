@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import AuthProvider from "@/components/auth-provider";
 import { UserNav } from "@/components/user-nav";
+import * as Sentry from "@sentry/nextjs"; // Added Sentry import
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Sentry initialization (client-side)
+  // This is typically done in sentry.client.config.ts, but for demonstration,
+  // we can add a simple capture here.
+  // Sentry.captureException(new Error("This is a test error from layout.tsx"));
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
