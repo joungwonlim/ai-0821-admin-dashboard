@@ -13,6 +13,9 @@
     "billing": "Billing",
     "settings": "Settings",
     "logout": "Log out",
+    "lightMode": "Light",
+    "darkMode": "Dark",
+    "systemMode": "System",
     "fetchStripeDataError": "Failed to fetch Stripe data.",
     "unexpectedError": "An unexpected error occurred."
   }
