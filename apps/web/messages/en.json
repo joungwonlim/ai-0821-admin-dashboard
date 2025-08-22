@@ -1,0 +1,22 @@
+{
+  "Index": {
+    "title": "SaaS Admin Dashboard",
+    "welcome": "Welcome to your dashboard. Content will be displayed here.",
+    "throwError": "Throw Test Error",
+    "fetchStripeData": "Fetch Stripe Data",
+    "fetchingStripeData": "Fetching Stripe Data...",
+    "stripeProducts": "Stripe Products:",
+    "noDescription": "No description",
+    "noProductsFound": "No products found or data is empty.",
+    "signIn": "Sign in",
+    "profile": "Profile",
+    "billing": "Billing",
+    "settings": "Settings",
+    "logout": "Log out",
+    "lightMode": "Light",
+    "darkMode": "Dark",
+    "systemMode": "System",
+    "fetchStripeDataError": "Failed to fetch Stripe data.",
+    "unexpectedError": "An unexpected error occurred."
+  }
+}

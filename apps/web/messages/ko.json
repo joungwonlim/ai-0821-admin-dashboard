@@ -1,0 +1,22 @@
+{
+  "Index": {
+    "title": "SaaS 관리 대시보드",
+    "welcome": "대시보드에 오신 것을 환영합니다. 여기에 내용이 표시됩니다.",
+    "throwError": "테스트 오류 발생",
+    "fetchStripeData": "Stripe 데이터 가져오기",
+    "fetchingStripeData": "Stripe 데이터 가져오는 중...",
+    "stripeProducts": "Stripe 제품:",
+    "noDescription": "설명 없음",
+    "noProductsFound": "제품을 찾을 수 없거나 데이터가 비어 있습니다.",
+    "signIn": "로그인",
+    "profile": "프로필",
+    "billing": "결제",
+    "settings": "설정",
+    "logout": "로그아웃",
+    "lightMode": "라이트",
+    "darkMode": "다크",
+    "systemMode": "시스템",
+    "fetchStripeDataError": "Stripe 데이터를 가져오지 못했습니다.",
+    "unexpectedError": "예상치 못한 오류가 발생했습니다."
+  }
+}
