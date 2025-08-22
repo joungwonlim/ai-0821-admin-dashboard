@@ -24,3 +24,8 @@ jobs:
       run: pnpm --filter web test:unit
     - name: Build Next.js app
       run: pnpm --filter web build
+    - uses: actions/upload-artifact@v4 # Added upload artifact step
+      with:
+        name: nextjs-build-output
+        path: apps/web/.next/
+        retention-days: 1
