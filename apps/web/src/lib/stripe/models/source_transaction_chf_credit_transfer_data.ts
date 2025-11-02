@@ -1,0 +1,27 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export type source_transaction_chf_credit_transfer_data = {
+    /**
+     * Reference associated with the transfer.
+     */
+    reference?: string;
+    /**
+     * Sender's country address.
+     */
+    sender_address_country?: string;
+    /**
+     * Sender's line 1 address.
+     */
+    sender_address_line1?: string;
+    /**
+     * Sender's bank account IBAN.
+     */
+    sender_iban?: string;
+    /**
+     * Sender's name.
+     */
+    sender_name?: string;
+};
+
